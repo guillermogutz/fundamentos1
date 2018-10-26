@@ -1,8 +1,48 @@
-* {
-  outline: 1px solid purple;
+*{
+  outline:1px solid purple;
 }
 
-div,section,article,ul{
-    height: 100%;
+:root {
+  --color-primario:#00ff00;
+  --color-secundario:#0ff000;
+  --color-link: #ff0000;
+  --color-link-hover: #f00000;
+  --altura-header: 75px;
+  --altura-seccion: 100vh;
 }
 
+div,section,article,ul,figure {
+  height: 100%;
+}
+
+header {
+  height: var(--altura-header);
+}
+figure{
+  height: 100%;
+  display: flex;
+}
+figure img{
+  display: block;
+  height: 100%;
+  width: auto;
+margin: auto;
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+nav ul li a {
+  display: block;
+  height: 100%;
+  width: auto;
+}
+
+.ha {
+  height: auto;
+}
+
+#heroscreen,#info,#participantes, #ubicacion {
+  height: var(--altura-seccion);
+}
