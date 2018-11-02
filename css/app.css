@@ -46,3 +46,75 @@ nav ul li a {
 #heroscreen,#info,#participantes, #ubicacion {
   height: var(--altura-seccion);
 }
+
+
+
+#banner {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+
+}
+
+.h-banner {
+   
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: center;
+     width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+h1 {
+    transform: translate(-50%, -50%);
+    font-size:8vh;
+    color: black;
+    padding: 20px;
+    text-align: center;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+   
+}
+
+#info {
+    display: flex;
+    width: 50&;
+}
+
+.info1 {
+    float: left;
+    width: 50%;
+    height: 100vh;
+    
+}
+
+.info2 {
+    width: 50%;
+    height: 100vh;
+    float: left;
+}
+
+p {
+    color: black;
+    text-align: center;
+     font-size: 3vh;
+    padding: 40px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 8vh;
+    color: black;
+    padding: 25px;
+}
+
+
+
+
+
+
+
+
