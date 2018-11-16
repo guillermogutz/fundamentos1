@@ -1,80 +1,363 @@
-<Doctype html>
+<!DOCTYPE html>
 <html>
 <head>
-<!--tags para servidores de busqueda-->
-<meta charset="UTF-8">
-<meta name="description" content="repaso de html y css del curso fundamentos deprogramacion en el Instituto Iconos">
-<meta name="keywords" content="HTML,CSS,JS,Ejercicios,ICONOS,programacion,codigo">
-<meta name="author" content="memomemitomemon">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- tags para servidores de busqueda -->
+  <meta name="description" content="Repaso de html y css del curso fundamentos de programacion en el Instituto ICONOS">
+  <meta name="keywords" content="HTML,CSS,JS,Ejercicio,ICONOS,programación,código">
+  <meta name="author" content="josecaos">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <!-- titulo del sitio -->
+  <title>Ejercicio Wireframe</title>
+  <!-- estilos -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/app.css">
+  <link rel="stylesheet" href="css/responsivos.css">
 
-<title>Wireframe perros</title>
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-<link rel="stylesheet" href="css/app.css">
 </head>
 <body>
- <main id="main" class="container-fluid">
 
-    <header class="row">
-        
-     <nav id="menu" class=" navbar navbar-expand-lg col-12">
-         
-          <figure id="logo" class="navbar-brand">
+  <header class="container-fluid">
+    <!-- menu escritorio -->
+    <nav id="menu" class="navbar navbar-expand-lg navbar-light col">
+      <!-- logo -->
+      <figure id="logo" class="navbar-brand">
+        <a href="index.html">
+          <img src="img/logo.png" alt="logo">
+        </a>
+      </figure>
 
-         <a hre="index.html">
-             <img src="img/wire.png" alt="logo">
-              </a>
-     </figure>
-         
-         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-         
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-         <ul class="navbar-nav col-12">
-                   
-             <li class="col-4 text-center ha align-self-center">
-                 <a href="#info">informacion</a>
-             </li>
-             <li class="col-4 text-center ha align-self-center">
-                 <a href="#participantes">participantes</a>
-             </li>
-             <li class="col-4 text-center ha align-self-center">
-                 <a href="#ubicacion">
-                     ubicacion
-                 </a>
-             </li>
-         </ul>
-         </div>
-     </nav> 
-    </header>
-     <section id="heroscreen" class="row"> 
-<div id="banner">
-     <img class="h-banner alt=" banner src="">
-      <h1>Fundamentos</h1>
-         </div>
-</section>
-     
-     <section id="info" class="row"> 
-          <div id="col8" class=info1>
-              <h2>Festival de Musica</h2>
-<p>Un festival de música es un tipo de festival o evento social que trata de aglutinar una gran cantidad de conciertos de música durante varios días y generalmente del mismo género musical, de este modo los asistentes al festival pueden pasar varios días disfrutando de música en directo. En estos festivales se suelen realizar otras actividades alternativas relacionadas con la música. </p>
-         </div>
-        
-        <div id="col4" class="info2">
-            <h2>Festivales</h2>
-            <p> Uno de los más famosos de la historia fue el Festival de Woodstock de 1969. En el continente americano destaca el Festival Internacional de la Canción de Viña del Mar y a nivel intercontinental sobresale el Festival de la Canción de Eurovisión por sus niveles de audiencia, que llegan a cifras de 200 millones de espectadores en el mundo.</p>
-         </div>
-        </section>
-   
-        <section id="participantes" class="row">    
-            </section>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
-            <section id="ubicacion" class="row">    
-                </section>
+        <ul class="col-12 navbar-nav">
 
- </main>
+          <li class="col-4 text-center ha align-self-center">
+            <a href="#info" class="">Información</a>
+          </li>
+          <li class="col-4 text-center ha align-self-center">
+            <a href="#participantes">Participantes</a>
+          </li>
+          <li class="col-4 text-center ha align-self-center">
+            <a href="#ubicacion">Ubicación</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main" class="container-fuid">
+    <!--  -->
+    <section id="heroscreen" class="col">
+
+      <div class="row">
+
+        <div class="heroscreen_background col">
+          <img src="img/conci.jpg" alt="Bienvenida">
+        </div>
+
+        <div class="heroscreen_text col text-center ha align-self-center">
+
+          <h1>ULTRA</h1>
+          <h3>MUSIC FESTIVAL</h3>
+
+        </div>
+
+      </div>
+
+    </section>
+    <!--  -->
+    <section id="info" class="col">
+
+      <div class="row">
+
+        <div class="col-12 col-md-8 ha align-self-center">
+
+          <h1 class="info_description col text-center">Descripción del evento</h1>
+
+          <div class="col text-left">
+
+            <p>Sólo faltan unos días para que se lleve a cabo una nueva edición de uno de los festivales de música más importantes del año: el ultra music festival, el cual presenta este 2018 una de sus carteleras más memorables desde su llegada a la escena nacional, hace ya ocho años.
+
+Miles de personas se congregarán en el CNA para presenciar algunas de las más de 40 bandas que tocarán durante los dos días del festival, y aunque para muchos no será la primera ocasión en que asistan al ultra music festival, siempre es necesario seguir algunos consejos que harán más placentera tu visita.</p>
+            <p>Para tu comodidad se recomienda que asistas al ultra music festival lo más ligero posible. Recuerda que habrá en todo momento revisión de mochilas donde podrás acceder con algunos artículos permitidos, como gorras, bloqueador, lentes de sol, chamarras e impermeables, entre otros. Recuerda que el clima suele ser caprichoso y, aunque se espera que los días en los que se llevará a cabo el evento estén parcialmente nublados, no descartes la posibilidad de lluvia, ya que en otros años ha sido la constante, además del frío que puede presentarse durante la tarde y noche.</p>
+
+          </div>
+
+        </div>
+
+        <div class="info_venue col-12 col-md-4 ha align-self-center">
+
+          <h2 class="col text-center">Lugar del evento</h2>
+          <div class="col text-left">
+
+            <p>Si eres una de las miles de personas que asistirán a la octava edición del ultra music festival, el cual se realizará los días 17 y 18 de noviembre en la curva 4 del Centro nacional de las artes y no sabes dónde estacionar tu auto, la organización del festival ha puesto a disposición de los asistentes miles de lugares de estacionamiento para que puedas dejarlo en total confianza mientras disfrutas del inigualable espectáculo que darán más de 40 bandas musicales.</p>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+    <!--  -->
+    <section id="participantes" class="col">
+
+      <h1 class="col text-center">Participantes</h1>
+
+      <div class="row">
+        <!--  -->
+        <div class="participantes_item col-12 col-md-6 col-lg-3">
+
+          <div class="participantes_item_back col">
+
+            <img src="img/mosuse.jpg" alt="Participante">
+
+          </div>
+
+          <div class="participantes_item_text col">
+
+            <div class="row">
+
+              <h2 class="col text-center ha my-auto"></h2>
+              <h4 class="col text-center ha my-auto"></h4>
+
+            </div>
+
+          </div>
+
+        </div>
+        <!--  -->
+        <div class="participantes_item col-12 col-md-6 col-lg-3">
+
+          <div class="participantes_item_back col">
+
+            <img src="img/chai.jpg" alt="Participante">
+
+          </div>
+
+          <div class="participantes_item_text col">
+
+            <div class="row">
+
+              <h2 class="col text-center ha my-auto"></h2>
+              <h4 class="col text-center ha my-auto"></h4>
+
+            </div>
+
+          </div>
+        </div>
+        <!--  -->
+        <div class="participantes_item col-12 col-md-6 col-lg-3">
+
+          <div class="participantes_item_back col">
+
+            <img src="img/cold.jpg" alt="Participante">
+
+          </div>
+
+          <div class="participantes_item_text col">
+
+            <div class="row">
+
+              <h2 class="col text-center ha my-auto"></h2>
+              <h4 class="col text-center ha my-auto"></h4>
+
+            </div>
+
+          </div>
+
+        </div>
+        <!--  -->
+        <div class="participantes_item col-12 col-md-6 col-lg-3">
+
+          <div class="participantes_item_back col">
+
+            <img src="img/one.jpg" alt="Participante">
+
+          </div>
+
+          <div class="participantes_item_text col">
+
+            <div class="row">
+
+              <h2 class="col text-center ha my-auto"></h2>
+              <h4 class="col text-center ha my-auto"></h4>
+
+            </div>
+
+          </div>
+
+        </div>
+        <!--  -->
+        <div class="participantes_item col-12 col-md-6 col-lg-3">
+
+          <div class="participantes_item_back col">
+
+            <img src="img/ima.jpg" alt="Participante">
+
+          </div>
+
+          <div class="participantes_item_text col">
+
+            <div class="row">
+
+              <h2 class="col text-center ha my-auto"></h2>
+              <h4 class="col text-center ha my-auto"></h4>
+
+            </div>
+
+          </div>
+
+        </div>
+        <!--  -->
+        <div class="participantes_item col-12 col-md-6 col-lg-3">
+
+          <div class="participantes_item_back col">
+
+            <img src="img/cal.jpg" alt="Participante">
+
+          </div>
+
+          <div class="participantes_item_text col">
+
+            <div class="row">
+
+              <h2 class="col text-center ha my-auto"></h2>
+              <h4 class="col text-center ha my-auto"></h4>
+
+            </div>
+
+          </div>
+
+        </div>
+        <!--  -->
+        <div class="participantes_item col-12 col-md-6 col-lg-3">
+
+          <div class="participantes_item_back col">
+
+            <img src="img/swe.jpg" alt="Participante">
+
+          </div>
+
+          <div class="participantes_item_text col">
+
+            <div class="row">
+
+              <h2 class="col text-center ha my-auto"></h2>
+              <h4 class="col text-center ha my-auto"></h4>
+
+            </div>
+
+          </div>
+
+        </div>
+        <!--  -->
+        <div class="participantes_item col-12 col-md-6 col-lg-3">
+
+          <div class="participantes_item_back col">
+
+            <img src="img/wee.jpg" alt="Participante">
+
+          </div>
+
+          <div class="participantes_item_text col">
+
+            <div class="row">
+
+              <h2 class="col text-center ha my-auto"></h2>
+              <h4 class="col text-center ha my-auto"></h4>
+
+            </div>
+
+          </div>
+
+        </div>
+        <!--  -->
+
+      </div>
+
+    </section>
+    <!--  -->
+    <section id="ubicacion" class="col">
+
+      <h1 class="col text-center">Ubicación</h1>
+
+      <div class="row">
+
+        <div class="col-12 col-lg-6 text-left ha my-auto">
+
+          <h2 class="col text-center">Aparta tu lugar</h2>
+
+          <p class="col">Llegar al ultra music festival podrá resultar un caos, pero si anticipas tu llegada podrás encontrar la manera adecuada de llegar a tiempo y en forma. Para ello existen múltiples alternativas: desde el servicio del Metro en la estación Ciudad de los deportes, hasta otros como Uber y Cabify, los cuales estarán proporcionando códigos de promoción para el evento. Si llegas en tu auto, considera que habrá espacio de estacionamiento disponible en el Palacio de los Deportes.</p>
+          <p class="col">Por primera vez en el ultra music festival se utilizará este método de pago. Será a través de una pulsera con un dispositivo especial que se podrá abonar dinero para posteriormente pagar con ella en todo momento. Recuerda, no habrá ningún establecimiento que acepte efectivo, por lo que debes solicitar esta pulsera a tu llegada y recargarla vía electrónica o en los módulos de atención que estarán disponibles.</p>
+
+          <br>
+
+          <form class="suscipcion text-center" action="index.html" method="post">
+
+            <label for="subscribe">
+              <input type="email" name="email" value="" placeholder="correo@gmail.com">
+              <input type="submit" name="submit" value="Enviar">
+            </label>
+
+          </form>
+
+        </div>
+
+        <div id="map" class="col-12 col-lg-6 text-center"></div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer id="footer" class="col">
+
+    <div class="row">
+
+      <div class="col col-md-6 col-lg-8 ha my-auto">
+
+        <copyright class="col text-left">Ejercicio maqueta 2018</copyright>
+
+      </div>
+      
+      <div class="social col col-md-6 col-lg-4 ha my-auto">
+
+        <ul class="row float-right">
+
+          <li class="col-3">
+            <a href="https://github.com" target="_blank">
+              <i class="fa fa-github"></i>
+            </a>
+          </li>
+          <li class="col-3">
+            <a href="https://soundcloud.com" target="_blank">
+              <i class="fa fa-soundcloud"></i>
+            </a>
+          </li>
+          <li class="col-3">
+            <a href="https://twitter.com" target="_blank">
+              <i class="fa fa-twitter"></i>
+            </a>
+          </li>
+          <li class="col-3">
+            <a href="https://instagram.com" target="_blank">
+              <i class="fa fa-instagram"></i>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </div>
+
+    </footer>
     
    
     
