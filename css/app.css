@@ -61,7 +61,7 @@ figure img {
   display: block;
   margin: auto;
   height: 100%;
-  width: auto;
+  width: auto; 
 }
 /* body */
 #heroscreen, #info, #ubicacion {
