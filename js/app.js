@@ -2,8 +2,9 @@
 // $ = conflict mode
 // inicializacion
 // jQuery(document)
-$(document).ready( () => {
+$(document).ready( ()=>{
 
+imgLiquid()
   // alert("ALERTAAAAA!! VAMOS A MORIRRR")
 
   // alert(suma(10,10))
@@ -81,4 +82,22 @@ function colores_fondo(time=1000,colorArray=['purple','red']) {
 
   // return i
 }
+   
+
+function imgLiquid(){
     
+    $('.imgLiquid.imgLiquidFill').imgLiquid()
+     $('.imgLiquid.imgLiquidFill').imgLiquid({
+     fill:false,
+})
+      
+    $('.imgLiquid.imgLiquidNoFillLeft').imgLiquid({
+     fill:false,
+    horizontalAlign:'left'
+})
+      $('.imgLiquid.imgLiquidNoFillRight').imgLiquid({
+     fill:false,
+    horizontalAlign:'right'
+})
+
+}
