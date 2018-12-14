@@ -65,26 +65,29 @@ figure img {
 }
 /* body */
 #heroscreen, #info, #ubicacion {
-  height: var(--altura-seccion);
+  min-height: var(--altura-seccion);
 }
 /* heroscreen */
 #heroscreen {
   position: relative;
+    padding-left: 0;
+    padding-right: 0;
 }
 .heroscreen_background {
-  overflow: hidden;
   position: absolute;
   padding: 0;
-  z-index: -1;
 }
 .heroscreen_background img {
   height: 100%;
   width: 100%;
 }
+.heroscreen_text-container {
+    height: var(--altura-seccion);
+}
 .heroscreen_text {
   position: absolute;
   left: 0;
-  z-index: 0;
+  z-index: 1000;
 }
 .heroscreen_text h1 {
   font-size: 6em
@@ -137,12 +140,11 @@ figure img {
       background-color: #515D6B;
 }
 
-#map {
-  background: url('../img/mapa.png') no-repeat;
-  background-size: cover;
-  background-position: center;
-  overflow: hidden;
+#map  {
+ 
   height: 100%;
+    padding: 0;
+   
 }
 /* footer */
 footer {

@@ -16,7 +16,7 @@ imgLiquid()
 // fondo('lime')
 // ancho()
 
-colores_fondo(250,["#3465fa","purple","black","yellow","lime","orange"])
+colores_fondo(250,["#515D6B"])
 
 } )
 
@@ -87,7 +87,7 @@ function colores_fondo(time=1000,colorArray=['purple','red']) {
 function imgLiquid(){
     
     $('.imgLiquid.imgLiquidFill').imgLiquid()
-     $('.imgLiquid.imgLiquidFill').imgLiquid({
+     $('.imgLiquid.imgLiquidNoFill').imgLiquid({
      fill:false,
 })
       
